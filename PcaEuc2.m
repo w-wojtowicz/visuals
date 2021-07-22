@@ -5,6 +5,10 @@ function [EcuDist, EcuDistAll, EcuDistVcords, EcudDistVcordsMean]= PcaEuc2(Score
 % Function can utilize data coming form PCA calculations and creates
 % 2D PCA with mean Euclidean Distance between groups and within groups.
 %
+% e.g.:
+% PcaEuc2(PCA.SCORE, PCA.EXPLAINED, Type, Batch, [1,2],'yes','yes','yes','Impact of oil origin','yes');
+%
+%
 % OUTPUTS:
 %   1. Graphical output ->  gives PCA with spider/web for group data points
 %   2. Numerical output -> Matrix with mean Euclidean distance between
