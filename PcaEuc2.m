@@ -10,7 +10,7 @@ function [EcuDist, EcuDistAll, EcuDistVcords, EcudDistVcordsMean]= PcaEuc2(Score
 %
 %
 % OUTPUTS:
-%   1. Graphical output ->  gives PCA with spider/web for group data points
+%   1. Graphical output ->  Gives PCA with spider/web for group data points
 %   2. Numerical output -> Matrix with mean Euclidean distance between
 %                           data points coming from that same group
 %
