@@ -6,15 +6,15 @@ function [EcuDist, EcuDistAll, EcuDistVcords, EcudDistVcordsMean]= PcaEuc2(Score
 % 2D PCA with mean Euclidean Distance between groups and within groups.
 %
 % OUTPUTS:
-%   1. Grpahical output ->  gives PCA with spider/web for group datapoints
-%   2. Numnerical output -> Matrix with mean Euclidean distance between
+%   1. Graphical output ->  gives PCA with spider/web for group data points
+%   2. Numerical output -> Matrix with mean Euclidean distance between
 %                           data points coming from that same group
 %
 %   EcuDist            - Mean Euclidean Distance within group
 %   EcuDistAll         - Euclidean Distance within group to mean of group
-%   EcuDistVcords      - Euclidean Distance between mean coordiantes and 
+%   EcuDistVcords      - Euclidean Distance between mean coordinates and 
 %                        mean of groups
-%   EcudDistVcordsMean - Mean Euclidean Distance coordiantes between groups
+%   EcudDistVcordsMean - Mean Euclidean Distance coordinates between groups
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -25,13 +25,13 @@ function [EcuDist, EcuDistAll, EcuDistVcords, EcudDistVcordsMean]= PcaEuc2(Score
 %               however, they should be prepared in order as in matlab function)
 %
 % ExpVar      - Column vector or Matlab's PCA function with numerical values
-%               of explained varaince. Sorted in descending order.
+%               of explained variance. Sorted in descending order.
 %
 % ColorGrp    - Information about sample main grouping. It will be
 %               represented as different colors.
 %
 % MarkerGrp   - Information about sample subgrouping. 
-%               It will be represented as differen marker. 
+%               It will be represented as different marker. 
 %
 % Comp        - Matrix with number of components as X,Y axis e.g. [1,2], 
 %               which indicates use of PC1 and PC2 on X and Y axis.
@@ -284,6 +284,3 @@ switch Save
     print([ 'PCA-' Textex],'-dtiff','-r0');
 end
 end
-
-
-
